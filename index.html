@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- displays site properly based on user's device -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | QR code component</title>
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <link rel="stylesheet" href="css/main.css"> -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      prefix: "tw-",
+      theme: {
+        extend: {
+          colors: {
+            white: "hsl(0, 0%, 100%)",
+            "light-gray": "hsl(212, 45%, 89%)",
+            "grayish-blue": "hsl(220, 15%, 55%)",
+            "dark-blue": "hsl(218, 44%, 22%)",
+          },
+          boxShadow: {
+            'card': "0px 25px 25px rgba(0, 0, 0, 0.048)"
+          }
+        }
+      }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer base {
+      body {
+        font-family: "Outfit", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        line-height: 1.2;
+      }
+    }
+  </style>
+
+
+</head>
+
+<body class="tw-bg-light-gray">
+  <main class="tw-flex tw-h-screen tw-items-center tw-justify-center">
+    <div class="tw-w-[320px] tw-h-[497px] tw-bg-white tw-rounded-[20px] tw-shadow-card">
+      <div class="tw-pt-4 tw-px-4 tw-pb-0 tw-mb-6">
+        <img class="tw-rounded-[10px]" src="./images/image-qr-code.png" width="288" height="288" alt="">
+      </div>
+
+      <h1 class="tw-text-dark-blue tw-text-[22px] tw-font-bold tw-mb-4 tw-px-4 tw-text-center">
+        Improve your front-end skills by building projects
+      </h1>
+
+      <p class="tw-text-[15px] tw-text-grayish-blue tw-px-4 tw-text-center tw-w-[288px] tw-mx-auto tw-tracking-[.19px]">
+        Scan the QR code to
+        visit Frontend Mentor and take your coding skills to the next level</p>
+
+    </div>
+  </main>
+
+</body>
+
+</html>
